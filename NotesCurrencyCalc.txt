@@ -12,3 +12,9 @@ book sources so better teach myself.
 I am going to dive into it, and try and use HTML/CSS/JAVASCRIPT to create this currency 
 calcultor. I am using "HTML/CSS design and build websites" by Jon Duckett to help self-
 teach myself. 
+
+--Day 2 - 3/21/2021
+
+I have made a basic UI for the project, and added a few styling elements to the page. I have added 
+the drop down menu for the different international currencies. I have to work at 4:00 and I have a few
+homework assignments to do, I am going to stop here for today, and resume tomorrow!!
