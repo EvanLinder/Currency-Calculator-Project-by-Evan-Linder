@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Calculator</title>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+    <div id="container">
+
+<div id="calculator">  
+       
+       
+                   <div id="result">
+                       <p id="result-final"> Awaiting input from user</p>
+                   </div>
+
+                   <div id="usd-amount">
+                    <form>
+                    <p>USD:
+                        <input id="usd-amt" type="text"/>
+                    </p>
+                   </div>
+                </form>
+                
+                <div id="options">
+                    
+                        <select id="currencyType" name="foriegncurrency" onchange="currencySelect();">
+                            <option value="*Invalid Option*">Choose a currency</option>
+                            <option value="0.769699">Australian dollar</option>
+                            <option value="0.010969">Argentine peso</option>
+                            <option value="2.659574">Bahranini Dinar</option>
+                            <option value="0.091022">Botswana Pula</option>
+                            <option value="0.182102">Brazilian Real</option>
+                            <option value="1.385784">British Pound</option>
+                            <option value="0.744556">Bruneian Dollar</option>
+                            <option value="0.607916">Bulgarian Lev</option>
+                            <option value="0.800171">Canadian Dollar</option>
+                            <option value="0.001402">Chilean Peso</option>
+                            <option value="0.153669">Chinese Yuan Renminbi</option>
+                            <option value="0.000281">Colombian Peso</option>
+                            <option value="0.157162">Croatian Kuna</option>
+                            <option value="0.045543">Czech Koruna</option>
+                            <option value="0.159767">Danish Krone</option>
+                            <option value="0.272294">Emirati Dirham</option>
+                            <option value="1.188980">Euro</option>
+                            <option value="0.128779">Hong Kong Dollar</option>
+                            <option value="0.003232">Hungarian Forint</option>
+                            <option value="0.272294">Emirati Dirham</option>
+                            <option value="0.272294">Emirati Dirham</option>
+                            <option value="0.272294">Emirati Dirham</option>
+                            <option value="1.00">United States Dollar (USD)</option>
+                            <option value="saint-helena-pound">Saint Helena pound (SHP)</option>
+                          
+                           
+                        </select>
+                 <input type="text" id= "currency-value">
+                </div>
+
+
+           <div id="keyboard">
+               <button class="operator" id="calculate">Calculate</button>
+               <button class="operator" id="clear">Clear</button>
+           </div>
+      
+            </div>
+        </div>
+<script src="Javascript/script.js"></script>
+</body>
+</html>
