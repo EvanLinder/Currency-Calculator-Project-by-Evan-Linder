@@ -8,9 +8,12 @@ function printResult(num){
     return document.getElementById("result-final").innerText=num;
  }
 
-function currencySelect() {
-    var selectedCurrency = document.getElementById('currencyType').value;
+    function currencySelect() {
+     var selectedCurrency = document.getElementById('currencyType').value;
     console.log(selectedCurrency);
+    var value = document.getElementById('currencyType');
+    var getValue = value.options[value.selectedIndex].value;
+    document.getElementById("currency-value").value=getValue;
 }
 
 
@@ -21,10 +24,12 @@ for (var i = 0; i<operator.length; i++) {
           printResult("Awaiting input from user");
         }
         if (this.id=="calculate") {
-            var UsdAmt = document.getElementById("usd-amt").value;
-            var select1 = document.getElementById('currencyType');
+            var myBox1 = document.getElementById('usd-amt').value; 
+            var myBox2 = document.getElementById('currency-value').value;
+            var result = document.getElementById('result-final'); 
+            var myResult = myBox1 * myBox2;
+            result.innerHTML = myResult;
 
-            document.getElementById('result-final').innerHTML=(UsdAmt * select1);
         }
         
     });
