@@ -8,6 +8,7 @@ function printResult(num){
     return document.getElementById("result-final").innerText=num;
  }
 
+
     function currencySelect() {
      var selectedCurrency = document.getElementById('currencyType').value;
     console.log(selectedCurrency);

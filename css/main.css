@@ -1,46 +1,163 @@
  body {
      background-color: black;
      background-image: url(../images/mainbackground.jpg);
-    
+
+ }
+ #thank {
+   font-size: 20px;
+   background-color: black;
+   width: 500px;
+   text-align: center;
+   margin: 0 auto;
+   border-radius: 15px;
+   font-family: serif; 
+   color: transparent; 
+   text-align: center; 
+   animation: effect 2s linear infinite;
+ }
+#thankBack {
+  background-color: black;
+  width: 500px;
+  height: 30px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 15px;
+}
+ 
+
+ #description {
+   width: 500px;
+   color: white;
+   background-color: #4CAF50;
+   text-align: center;
+   font-size: 30px;
+   border-radius: 5px;
+   box-shadow:  0 9px #999;
  }
 
 #container {
     text-align: center; 
-    width: 330px;
-    height: 270px;
-    background-color: white;
-    color: black;
-    margin: 300px auto;
+    width: 500px;
+    height: 560px;
+    background-color: transparent;
    border-radius: 5px;
+   margin: 0 auto;
 }
 
-#calculator {
-    width: 300px;
-    height: 240px;
-    margin: 0 auto;
-    background-color: gray;
-    top: 15px;
-    position: relative;
-    border-radius: 5px;
-    color: black;
-
-}
 
 #keyboard {
-    margin: 50px auto;
+  width: 500px;
+margin: 30px auto;
 }
 
 #options {
-    margin: 50px auto;
+  width: 500px;
+  margin: 30px auto;
 }
 
 #result {
-    width: 300px;
-    height: 20px;
-    background-color: black;
-    margin: 0 auto;
+background-color: #4CAF50;
+    width:500px;
+    box-shadow: 0 9px #999;
     color: white;
-    position: relative;
-    border-radius: 5px;
+    font-size: 24px;
+    text-align: center;
+border-radius: 15px;
+
 }
 
+.operator {
+
+  position: relative;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+   
+  }
+  
+  .operator:hover {background-color: #3e8e41}
+  
+  .operator:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .menu {
+     width:500px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .menu:hover {background-color: #3e8e41}
+  
+  .menu:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  
+  #currency-value {
+   width: 500px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+
+  #usd-amount {
+    padding: 1px;
+    width:500px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  @keyframes effect { 
+    0% { 
+        background: linear-gradient( 
+            #008000, #00FF00); 
+        -webkit-background-clip: text; 
+    } 
+    25% {
+      background: linear-gradient( 
+        purple, red); 
+    -webkit-background-clip: text; 
+    }
+    50% {
+      background: linear-gradient( 
+        yellow, orange); 
+    -webkit-background-clip: text; 
+    }
+  
+    100% { 
+        background: linear-gradient( 
+            #3CE7D7, #000FFF); 
+        -webkit-background-clip: text; 
+    } 
+  }

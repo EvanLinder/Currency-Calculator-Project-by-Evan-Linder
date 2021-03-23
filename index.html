@@ -8,27 +8,35 @@
     <link rel="stylesheet" href="css/main.css"/>
 </head>
 <body>
+
+
     <div id="container">
 
-<div id="calculator">  
-       
-       
+<div id="description">
+        <h1>Currency Converter</h1>
+        <p>By Evan Linder</p>
+    </div>
+
+   
+
+
+  
+
                    <div id="result">
                        <p id="result-final"> Awaiting input from user</p>
                    </div>
 
                    <div id="usd-amount">
-                    <form>
-                    <p>USD:
+                   
+                    <p>Enter USD amt:
                         <input id="usd-amt" type="text"/>
                     </p>
                    </div>
-                </form>
-                
+              
                 <div id="options">
                     
-                        <select id="currencyType" name="foriegncurrency" onchange="currencySelect();">
-                            <option value="*Invalid Option*">Choose a currency</option>
+                        <select class="menu" id="currencyType" name="foriegncurrency" onchange="currencySelect();">
+                            <option value="*Invalid Option*">*Choose a currency*</option>
                             <option value="0.769699">Australian dollar</option>
                             <option value="0.010969">Argentine peso</option>
                             <option value="2.659574">Bahranini Dinar</option>
@@ -56,17 +64,22 @@
                           
                            
                         </select>
-                 <input type="text" id= "currency-value" readonly on focus="this.blur();">
-                </div>
 
+                    </div>
+
+              <div> <input type="text" id= "currency-value" readonly on focus="this.blur();"> </div> 
 
            <div id="keyboard">
                <button class="operator" id="calculate">Calculate</button>
                <button class="operator" id="clear">Clear</button>
-           </div>
-      
-            </div>
         </div>
+
+      </div>
+<div id="thankBack">
+      <div id="thank">
+          <p>Hope you are enjoying my foriegn currency calculator :)</p>
+      </div>
+    </div>
 <script src="Javascript/script.js"></script>
 </body>
 </html>
